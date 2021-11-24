@@ -1,55 +1,55 @@
-// package com.example.demo.model.clothes;
+package com.example.demo.model.clothes;
 
 
-// import javax.persistence.*;
+import javax.persistence.*;
 
-// @Entity
-// @Table(name = "coat")
-// public class Coat extends Clothes {
-//     @Column(name = "waterResistant")
-//     private int waterResistant;
+@Entity
+@Table(name = "coat")
+public class Coat extends Clothes {
+    @Column(name = "waterResistant")
+    private int waterResistant;
 
-//     @Column(name = "pocketNumber")
-//     private int pocketNumber;
+    @Column(name = "pocketNumber")
+    private int pocketNumber;
 
-//     @Column(name = "moistureWicking")
-//     private int moistureWicking;
-
-
-//     public Coat() {
-//     }
+    @Column(name = "moistureWicking")
+    private int moistureWicking;
 
 
-//     public Coat(String brand, String color, String material, String department, String size, float weight,
-//     String countryOrigin, int waterResistant, int pocketNumber, int moistureWicking) {
-//         super(brand, color, material, department, size, weight, countryOrigin);
-//         this.waterResistant = waterResistant;
-//         this.pocketNumber = pocketNumber;
-//         this.moistureWicking = moistureWicking;
-//     }
+    public Coat() {
+    }
 
-//     public int getWaterResistant() {
-//         return this.waterResistant;
-//     }
 
-//     public void setWaterResistant(int waterResistant) {
-//         this.waterResistant = waterResistant;
-//     }
+    public Coat(String brand, String color, String material, String department, String size, float weight,
+    String countryOrigin, int waterResistant, int pocketNumber, int moistureWicking) {
+        super(brand, color, material, department, size, weight, countryOrigin);
+        this.waterResistant = waterResistant;
+        this.pocketNumber = pocketNumber;
+        this.moistureWicking = moistureWicking;
+    }
 
-//     public int getPocketNumber() {
-//         return this.pocketNumber;
-//     }
+    public int getWaterResistant() {
+        return this.waterResistant;
+    }
 
-//     public void setPocketNumber(int pocketNumber) {
-//         this.pocketNumber = pocketNumber;
-//     }
+    public void setWaterResistant(int waterResistant) {
+        this.waterResistant = waterResistant;
+    }
 
-//     public int getMoistureWicking() {
-//         return this.moistureWicking;
-//     }
+    public int getPocketNumber() {
+        return this.pocketNumber;
+    }
 
-//     public void setMoistureWicking(int moistureWicking) {
-//         this.moistureWicking = moistureWicking;
-//     }
+    public void setPocketNumber(int pocketNumber) {
+        this.pocketNumber = pocketNumber;
+    }
 
-// }
+    public int getMoistureWicking() {
+        return this.moistureWicking;
+    }
+
+    public void setMoistureWicking(int moistureWicking) {
+        this.moistureWicking = moistureWicking;
+    }
+
+}
